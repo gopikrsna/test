@@ -1,0 +1,1153 @@
+{
+  "ProjectDetails": [
+    {
+      "AccountName": "Microsoft",
+      "AccountManager": "Ramana Ghanta",
+      "DeliveryManager": [
+        {
+          "Name": "Sanjay Agnihotri",
+          "EmpId": "254789",
+          "EmailId": "Sanjay@wipro.com",
+          "ProjectMetrics": [
+            {
+              "propretyRevenue": "Revenue Projection",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "",
+                  "text": "Last two Quarter",
+                  "value": [
+                  ]
+                }
+              ]
+            },
+            {
+              "propretyOpenPositions": "Open Positions",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter ",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last two Quarter ",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyIteration": "Iteration",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [ ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarter",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyCostOfDelivery": "Cost Of Delivery",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarters",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "Name": "Sushil Agarwal",
+          "EmpId": "456321",
+          "EmailId": "Sushil@wipro.com",
+          "ProjectMetrics": [
+            {
+              "propretyRevenue": "Revenue Projection",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "",
+                  "text": "Last two Quarter",
+                  "value": [
+                  ]
+                }
+              ]
+            },
+            {
+              "propretyOpenPositions": "Open Positions",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter ",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last two Quarter ",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyIteration": "Iteration",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [ ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarter",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyCostOfDelivery": "Cost Of Delivery",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarters",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "Name": "Vievk Agarwal",
+          "EmpId": "741258",
+          "EmailId": "Vivek@wipro.com",
+          "ProjectMetrics": [
+            {
+              "propretyRevenue": "Revenue Projection",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "",
+                  "text": "Last two Quarter",
+                  "value": [
+                  ]
+                }
+              ]
+            },
+            {
+              "propretyOpenPositions": "Open Positions",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter ",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last two Quarter ",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyIteration": "Iteration",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [ ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarter",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyCostOfDelivery": "Cost Of Delivery",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarters",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "Name": "Mohan K",
+          "EmpId": "963852",
+          "EmailId": "Mohan@wipro.com",
+          "ProjectMetrics": [
+            {
+              "propretyRevenue": "Revenue Projection",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "",
+                  "text": "Last two Quarter",
+                  "value": [
+                  ]
+                }
+              ]
+            },
+            {
+              "propretyOpenPositions": "Open Positions",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter ",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last two Quarter ",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyIteration": "Iteration",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [ ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarter",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyCostOfDelivery": "Cost Of Delivery",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarters",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "Name": "Srini",
+          "EmpId": "254789",
+          "EmailId": "srini@wipro.com",
+          "ProjectMetrics": [
+            {
+              "propretyRevenue": "Revenue Projection",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                  ]
+                },
+                {
+                  "id": "",
+                  "text": "Last two Quarter",
+                  "value": [
+                  ]
+                }
+              ]
+            },
+            {
+              "propretyOpenPositions": "Open Positions",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter ",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last two Quarter ",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyIteration": "Iteration",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [ ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [ ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarter",
+                  "value": [ ]
+                }
+              ]
+            },
+            {
+              "propretyCostOfDelivery": "Cost Of Delivery",
+              "quarters": [
+                {
+                  "id": "1",
+                  "text": "As On Date",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "2",
+                  "text": "Last Quarter",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                },
+                {
+                  "id": "3",
+                  "text": "Last two Quarters",
+                  "value": [
+                    {
+                      "propertyGrossName": "Gross",
+                      "propertyGrossvalue": "160"
+                    },
+                    {
+                      "propertyGrossBilable": "Gross Billable",
+                      "propertyGrossBillablevalue": " 142.0"
+                    },
+                    {
+                      "propertyGrossUtilization": "Gross Utilization",
+                      "propertyGrossUtilizationvalue": "98.0%"
+                    },
+                    {
+                      "propertyGrossBilableBulge": "Gross Billable Bluge",
+                      "propertyGrossBillableBlugevalue": "26.88%"
+                    },
+                    {
+                      "propertyGrossBilableRookie": "Gross Billable Rookie",
+                      "propertyGrossBillableRookievalue": "142.0"
+                    },
+                    {
+                      "propertyOnsite": "On Site",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteBillable": "Onsite Billable",
+                      "propertyOnsitevalue": "31"
+                    },
+                    {
+                      "propertyOnsiteSupport": "Onsite Support",
+                      "propertyOnSiteSupportvalue": "0"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}
+
+
+/// Back up Json
+
+
+//var managersData
+//    = {
+//        "ProjectDetails":
+//    [
+//        {
+//            "AccountName": "Microsoft",
+//            "AccountManager": "Ramana Ghanta",
+//            "DeliveryManager": [
+//        {
+//            "Name": "Sanjay Agnihotri",
+//            "EmpId": "254789",
+//            "EmailId": "Sanjay@wipro.com",
+//            "ProjectMetrics": {
+//                "RevenueProjection": { "AsOnDate" : "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "OpenPositions": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "Iteration": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "CostOfDelivery": {
+//                    "AsOnDate": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31","OnsiteBillable":"30","OnsiteSupport":"0"
+//                    }, "LastQuarter": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "Gross Billable Bulge": "26.88%", "Gross Billable Rookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastTwoQuarters": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }
+//                }
+//            }
+//        },
+//        {
+//            "Name": "sushil",
+//            "EmpId": "256984",
+//            "EmailId": "sushil@wipro.com",
+//            "ProjectMetrics": {
+//                "RevenueProjection": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "OpenPositions": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "Iteration": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "CostOfDelivery": {
+//                    "AsOnDate": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastQuarter": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "Gross Billable Bulge": "26.88%", "Gross Billable Rookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastTwoQuarters": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }
+//                }
+//            }
+//        },
+//        {
+//            "Name": "Praveen B",
+//            "EmpId": "324569",
+//            "EmailId": "praveenB@wipro.com",
+//            "ProjectMetrics": {
+//                "RevenueProjection": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "OpenPositions": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "Iteration": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "CostOfDelivery": {
+//                    "AsOnDate": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastQuarter": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "Gross Billable Bulge": "26.88%", "Gross Billable Rookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastTwoQuarters": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }
+//                }
+//            }
+//        },
+//        {
+//            "Name": "RajSekhar",
+//            "EmpId": "369852",
+//            "EmailId": "RajSekhar@wipro.com",
+//            "ProjectMetrics": {
+//                "RevenueProjection": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "OpenPositions": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "Iteration": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "CostOfDelivery": {
+//                    "AsOnDate": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastQuarter": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "Gross Billable Bulge": "26.88%", "Gross Billable Rookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastTwoQuarters": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }
+//                }
+//            }
+//        },
+//        {
+//            "Name": "Ramana Ghanta",
+//            "EmpId": "415263",
+//            "EmailId": "Ramana@wipro.com",
+//            "ProjectMetrics": {
+//                "RevenueProjection": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "OpenPositions": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "Iteration": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "CostOfDelivery": {
+//                    "AsOnDate": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastQuarter": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "Gross Billable Bulge": "26.88%", "Gross Billable Rookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastTwoQuarters": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }
+//                }
+//            }
+//        },
+//        {
+//            "Name": "Mohan",
+//            "EmpId": "478569",
+//            "EmailId": "mohan@wipro.com",
+//            "ProjectMetrics": {
+//                "RevenueProjection": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "OpenPositions": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "Iteration": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "CostOfDelivery": {
+//                    "AsOnDate": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastQuarter": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "Gross Billable Bulge": "26.88%", "Gross Billable Rookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastTwoQuarters": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }
+//                }
+//            }
+//        },
+//        {
+//            "Name": "srini",
+//            "EmpId": "745968",
+//            "EmailId": "srini@wipro.com",
+//            "ProjectMetrics": {
+//                "RevenueProjection": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "OpenPositions": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "Iteration": { "AsOnDate": "now", "LastQuarter": "march", "LastTwoQuarters": " sep" },
+//                "CostOfDelivery": {
+//                    "AsOnDate": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastQuarter": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "Gross Billable Bulge": "26.88%", "Gross Billable Rookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }, "LastTwoQuarters": {
+//                        "Gross": "160", "GrossBillable": "142.0", "GrossUtilization": "98.06%",
+//                        "GrossBillableBulge": "26.88%", "GrossBillableRookie": "12.00%",
+//                        "Onsite": "31", "OnsiteBillable": "30", "OnsiteSupport": "0"
+//                    }
+//                }
+//            }
+//        }
+//            ]
+//        }
+//    ]
+//    };
+

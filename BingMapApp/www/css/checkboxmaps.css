@@ -1,0 +1,88 @@
+﻿
+#accountsdiv
+{
+    font-size:18px;
+    text-align:center;
+    color:#fff;
+}
+
+.applyaccountname {
+    width: 404px;
+    color:#fff;
+    background-color: #3396C6;
+    border:1px solid #3396C6;
+    font-size: 18px;
+    padding:3px 0px;
+    /*margin-left:4px;*/
+}
+
+.repeatedlistaccountnames {
+    height: 350px;
+}
+
+.custom-checkbox {
+    width: 16px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    top: 3px;
+    left: 90%;
+    /*background: url("") no-repeat !important;
+            background-image: none !important;*/
+}
+
+    .custom-checkbox:hover {
+        background: url("") no-repeat;
+    }
+
+    .custom-checkbox.selected {
+        background: url('../images/checkbox1.png') no-repeat;
+    }
+
+    .custom-checkbox input[type="checkbox"] {
+        margin: 0;
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+        outline: none;
+        opacity: 0;
+        /* CSS hacks for older browsers */
+        _noFocusLine: expression(this.hideFocus=true);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        filter: alpha(opacity=0);
+        -khtml-opacity: 0;
+        -moz-opacity: 0;
+    }
+
+
+
+label {
+    display: block;
+    padding: 6px 0;
+    font-family: serif;
+}
+
+.checkboxlabel {
+    font-size: 18px;
+}
+
+.checkboxselectalllabel {
+    font-size: 20px;
+    font-weight:bold;
+    width:100%;
+}
+
+.label-for-check {
+    width:100%;
+    margin-bottom:0px;
+}
+
+.labelselectedcheckbox {
+    font-weight: bold;
+    color: #fff;
+    /*background-color: rgba(255,255,255,0.2);*/
+    /*background-color:#3396c6;*/
+    background-color: #2d3e48;
+    text-decoration: none;
+}

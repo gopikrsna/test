@@ -1,0 +1,316 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <title>ChartApp</title>-->
+    <script src="../scripts/winstore-jscompat.js"></script>
+    <script src="../scripts/jquery-1.11.1.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/site.css" rel="stylesheet" />
+    <script src="../scripts/angular.min.js"></script>
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../scripts/Maps/app.js"></script>
+
+    <script src="../scripts/Maps/Chart.js"></script>
+    <script src="../scripts/Maps/index.js"></script>
+    <script src="../scripts/Maps/mychart.js"></script>
+    <script src="../scripts/xlsx.core.min.js"></script>
+    <link href="../css/custom.css" rel="stylesheet" />
+    <style>
+        a.quaterlink {
+            color: #2895cd;
+            text-decoration: none !important;
+            border: none;
+            outline: none;
+        }
+            /* unvisited link */
+            a.quaterlink:visited {
+                color: #2895cd;
+                text-decoration: none !important;
+                border: none;
+                outline: none;
+            }
+            /* visited link */
+            a.quaterlink:hover {
+                color: #2895cd;
+                text-decoration: none !important;
+            }
+            /* mouse over link */
+            a.quaterlink:active {
+                color: #029AFF;
+                text-decoration: none !important;
+                border: none;
+                outline: none;
+            }
+            /* selected link */
+            a.quaterlink:focus {
+                text-decoration: none;
+                border-bottom: 2px solid #000000;
+                color: #000000;
+                outline: none;
+            }
+
+
+        .noborder {
+            border-left: 0 !important;
+            border-right: 0 !important;
+            border-top: 0 !important;
+        }
+
+        hr {
+            -moz-border-bottom-colors: none;
+            -moz-border-image: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: #97cbe2;
+            border-style: solid none;
+            border-width: 1px 0;
+        }
+
+            hr.acheived {
+                border-color: #2895cd;
+                border-style: solid none;
+                border-width: 2px 0;
+            }
+
+        .quaters {
+            min-height: 20px;
+            padding: 0px;
+            margin-bottom: 20px;
+            background-color: #e0dede;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        }
+
+        .alignleft {
+            margin-left: -5px;
+        }
+
+        .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+            color: #fff;
+            background-color: #337ab7;
+        }
+
+        .nav-pills > li > a {
+            border-radius: 4px;
+        }
+    </style>
+
+</head>
+<body ng-app="myapp" ng-controller="revenuecntrl">
+
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img id="backpagediv" src="../images/back_1.png" height="28" width="28" style="padding-top:0px; margin-top:10px" class="pull-left" ng-click="backtoPage()" />
+
+                        <a id="menu-toggle" href="javascript:void(0);" class="glyphicon btn-menu toggle" style="display:none">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                        <div style="padding-left:50px">
+                            <img id="menu-logo" src="../images/XView.png" height="36" width="36" />
+                            <a id="menu-title">Executive Dashboard</a>
+                            <!--<span style="color:#cc4141;font-size:18px; font-weight:bolder">eX</span>
+                            <span style="color:darkred; font-size:18px; font-weight:bolder">view</span>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <!-- Page content -->
+        <div class="container">
+            <div class="row quaters">
+                <div class="col-md-6 col-xs-6 hidden">
+                    <label>
+                        <input type="radio" name="chart" value="Line" onclick="selectedgraph();"> Line Chart
+                    </label>
+
+                </div>
+                <div class="col-md-6 col-xs-6 hidden">
+                    <label>
+                        <input type="radio" name="chart" checked="checked" onclick="selectedgraph();" value="Bar"> Bar Chart
+                    </label>
+                </div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder" id="firstQ">Current Qtr </a></div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder" id="secondQ">Next Qtr</a></div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder" id="thirdQ">Prev. Qtr</a></div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder" id="fourthQ">Last Two Qtrs</a></div>
+            </div>
+            <div class="panel-body">
+                <ul class="nav nav-pills">
+                    <li class="active">
+                        <a href="#home-pills" data-toggle="tab" aria-expanded="true">Sanjay </a>
+                    </li>
+                    <li class="">
+                        <a href="#profile-pills" data-toggle="tab" aria-expanded="false">Ramana</a>
+                    </li>
+                    <li class="">
+                        <a href="#messages-pills" data-toggle="tab" aria-expanded="false">Sajal</a>
+                    </li>
+                    <li>
+                        <a href="#settings-pills" data-toggle="tab">RajaSekhar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row" style="padding-left:5%">
+                <h4>Sanjay</h4>
+                <div class="" style="float:left;">
+                    <canvas id="canvas" height="200" width="250"></canvas>
+
+                </div>
+
+                <div class="" style="padding-left:260px;">
+                    <label><small><b>Actual Revenue</b></small></label>
+                    <div>
+                        <div style="height:15px;width:15px;background-color:rgba(89,171,86,0.75);float:left"></div>   <div style="margin-left:20px;">$ 1,096,418</div>
+                    </div>
+                    <label><small><b>Projected Revenue</b></small></label>
+                    <div>
+                        <div style="height:15px;width:15px;background-color:rgba(149,26,10,0.75);float:left"></div>   <div style="margin-left:20px;">$ 0</div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row" style="padding-left:5%">
+                <h4>Ramana</h4>
+                <div class="" style="float:left;">
+                    <canvas id="canvas2" height="200" width="250"></canvas>
+                </div>
+                <div class="" style="padding-left:260px;">
+                    <label><small><b>Actual Revenue</b></small> </label>
+                    <div>
+                        <div style="height:15px;width:15px;background-color:rgba(89,171,86,0.75);float:left"></div>   <div style="margin-left:20px;">$ 1,096,418</div>
+                    </div>
+                    <label><small><b>Projected Revenue</b></small> </label>
+                    <div>
+                        <div style="height:15px;width:15px;background-color:rgba(149,26,10,0.75);float:left"></div>   <div style="margin-left:20px;">$ 0</div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <h4> Actual Revenue Details</h4>
+                <hr class="acheived nopadding" />
+                <div>
+                    <span>Sanjay </span>
+                    <!--                    <span>Highest</span>-->
+                    <span id="highestrevenue" class="pull-right"></span>
+                </div>
+                <hr class="nopadding" />
+                <!--<div>
+                    <span>Ramana </span>
+                    <span>Lowest</span>
+                    <span id="lowestrevenue" class="pull-right"></span>
+                </div>-->
+                <hr class="nopadding" />
+                <div>
+                    <ul style="list-style-type:none">
+                        <li>Jan  <span class="pull-right">$ 1,096,418</span></li>
+                        <li>Feb <span class="pull-right">$ 1,111,092 </span></li>
+                        <li>Mar <span class="pull-right">$ 1,108,754 </span></li>
+                        <li>Apr <span class="pull-right">$ 1,096,098 </span></li>
+                        <li>May <span class="pull-right">$ 1,102,586 </span></li>
+                        <li>Jun <span class="pull-right">$ 6,148,445 </span></li>
+
+                        <li>
+                            <b>Total</b>
+                            <span id="" class="pull-right">$ 6,148,445 </span>
+                        </li>
+
+                    </ul>
+
+                    <!--<span id="averagerevenue" class="pull-right"></span><br />
+                    <span>Feb </span>
+                    <span id="averagerevenue" class="pull-right">$ </span><br />
+                    <span>Mar </span>
+                    <span id="averagerevenue" class="pull-right">$ 1,108,754 </span><br />
+                    <span>Apr </span>
+                    <span id="averagerevenue" class="pull-right"></span><br />
+                    <span>May </span>
+                    <span id="averagerevenue" class="pull-right"></span><br />
+                    <span>Jun </span>
+                    <span id="averagerevenue" class="pull-right">$ 1,108,754 </span><br />
+                    <span>Total </span>
+                    <span id="averagerevenue" class="pull-right">$ 6,148,445 </span>-->
+
+
+
+                </div>
+            </div>
+            <hr class="nopadding" />
+            <br />
+            <div>
+                <h4> Actual Revenue Details</h4>
+                <hr class="acheived nopadding" />
+                <div>
+                    <span>Ramana</span>
+                    <!--                    <span>Highest</span>-->
+                    <span id="highestrevenue" class="pull-right"></span>
+                </div>
+                <hr class="nopadding" />
+                <!--<div>
+                    <span>Ramana </span>
+                    <span>Lowest</span>
+                    <span id="lowestrevenue" class="pull-right"></span>
+                </div>-->
+                <hr class="nopadding" />
+                <div>
+                    <ul style="list-style-type:none">
+                        <li>Jan  <span class="pull-right">$ 1,096,418</span></li>
+                        <li>Feb <span class="pull-right">$ 1,111,092 </span></li>
+                        <li>Mar <span class="pull-right">$ 1,108,754 </span></li>
+                        <li>Apr <span class="pull-right">$ 1,096,098 </span></li>
+                        <li>May <span class="pull-right">$ 1,102,586 </span></li>
+                        <li>Jun <span class="pull-right">$ 6,148,445 </span></li>
+
+                        <li>
+                            <b>Total</b>
+                            <span id="" class="pull-right">$ 6,148,445 </span>
+                        </li>
+
+                    </ul>
+
+                    <!--<span id="averagerevenue" class="pull-right"></span><br />
+                    <span>Feb </span>
+                    <span id="averagerevenue" class="pull-right">$ </span><br />
+                    <span>Mar </span>
+                    <span id="averagerevenue" class="pull-right">$ 1,108,754 </span><br />
+                    <span>Apr </span>
+                    <span id="averagerevenue" class="pull-right"></span><br />
+                    <span>May </span>
+                    <span id="averagerevenue" class="pull-right"></span><br />
+                    <span>Jun </span>
+                    <span id="averagerevenue" class="pull-right">$ 1,108,754 </span><br />
+                    <span>Total </span>
+                    <span id="averagerevenue" class="pull-right">$ 6,148,445 </span>-->
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row" id="bottomNav">
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../mapFrame.html"><i class="fa fa-home fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-star fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-search fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../master.html"><i class="fa fa-sign-out fa-2x"></i><br></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

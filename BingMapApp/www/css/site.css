@@ -1,0 +1,392 @@
+﻿.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.loadingClass {
+    height: 200%;
+    /*background-image:url(../images/wiprolog.png);
+    background-repeat:no-repeat;*/
+}
+
+.logoclass {
+    float: right;
+}
+
+.dashboarddiv {
+    padding-top: 80%;
+}
+
+.footer {
+    background-color: rgb(24,98,173);
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.footerAnchor {
+    color: white; 
+    text-decoration:none;
+}
+
+.redirectmaps {
+    margin-left: 35%;
+}
+
+.map {
+    height: 90%;
+}
+
+
+.modalClass {
+    background-color: white;
+    top: 40px;
+    bottom: 80px;
+    position: absolute;
+    width: 100%;
+    height: 650px;
+}
+
+.tilesClass {
+    margin-left: 5%;
+    width: 90%;
+}
+
+.tileclasstd {
+    padding: 5px;
+}
+
+.accountsdiv {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dmclassdiv {
+    overflow-x: no-display;
+    overflow-y: auto;
+    height: 50%;
+}
+
+.dmlistdiv {
+    font-size: large;
+}
+
+.backbtnclass {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.projectClass {
+    /*margin-left: 5%;*/
+    width: 100%;
+}
+
+.dmclassname {
+    /*padding: 5px;
+    width: 90%;*/
+}
+
+.squaretiles {
+    width: 40%;
+    height: 40%;
+    /*padding-left: 3%;*/
+}
+
+.openpositonclass {
+    padding-left: 5%;
+    padding-right: 2%;
+}
+
+.projectiondiv {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.costdeliveryclass {
+    width: 40%;
+    height: 40%;
+    /*padding-left: 5%;*/
+    /*padding-right: 2%;*/
+}
+
+.locationdiv {
+    height: 50px;
+}
+
+.accounts {
+    float: right;
+    padding-right: 100px;
+    padding-top: 3px;
+}
+
+.dmicon {
+    float: left;
+    padding-left: 40px;
+}
+
+.namesize {
+    font-size: 20px;
+}
+
+
+.accountsicons {
+    padding-top: 50%;
+    padding-left: 80px;
+}
+
+.dmicons {
+    padding-top: 50%;
+    padding-right: 80px;
+}
+
+/*quarters table */
+table.quarters {
+    /* width: 100%; */ /* Optional */
+    /* border-collapse: collapse; */
+}
+
+    table.quarters tbody,
+    table.quarters thead { /*display: block;*/
+    }
+
+thead tr th {
+    /*height: 15px;
+    line-height: 15px;*/
+    /* text-align: left; */
+}
+
+/*table.quarters tbody {
+    height: 130px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}*/
+
+tbody {
+}
+
+    tbody td, thead th {
+        /* width: 20%; */ /* Optional */
+        /* white-space: nowrap; */
+    }
+
+/*tbody td:last-child, thead th:last-child {
+    border-right: none;
+}*/
+
+
+
+.metro-surface {
+    /*padding: 40px 0px 0px 0px;*/
+    /*width:100%;*/
+}
+
+.row1:nth-child(odd) {
+    color: coral;
+}
+
+.row1:nth-child(even) {
+    color: cornflowerblue;
+}
+
+.metro-tile {
+    /*background-color: #D8512B;*/
+    border-color: #DC6241;
+    /*width: 100%;*/
+    /*height: 104px;*/
+    /*padding: 5px;*/
+    padding: 15px;
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 12px;
+    border-width: 3px;
+    border-style: solid;
+    cursor: default;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -ms-transition: 0.1s all;
+    transition: 0.1s all;
+}
+
+.listNames:nth-child(odd) {
+    color: cornflowerblue;
+}
+
+.listNames:nth-child(even) {
+    color: coral;
+}
+
+.metro-tile-small {
+    /*width: 100%;*/
+    /*height: 120px;*/
+    height: 120px;
+}
+
+.listofdelivery {
+    margin-left: 20%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.metro-tile-health {
+    background-color: rgb(90,65,129);
+    border-color: rgb(90,65,129);
+}
+
+.metro-tile-gainLoss {
+    background-color: #00B34E;
+    border-color: #00B34E;
+}
+
+.metro-tile-openposition {
+    /*background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Store.png);*/
+    background-color: rgb(168,128,0);
+    border-color: rgb(168,128,0);
+}
+
+.metro-tile-Atterations {
+    /*background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Store.png);*/
+    background-color: #009687;
+    border-color: #009687;
+}
+
+.metro-tile-Cost {
+    /*background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Store.png);*/
+    background-color: #F9644E;
+    border-color: #F9644E;
+}
+
+.metro-tile-store {
+    /*background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Store.png);*/
+    background-color: rgb(218, 59, 1);
+    border-color: rgb(218, 59, 1);
+    /*#3769B0;*/
+}
+
+
+.metro-tile-xbox {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/XBox.png);
+    background-position: 8px 8px;
+    background-color: darkgray;
+    border-color: darkgray;
+}
+
+
+.metro-tile-google {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Google.png);
+    background-color: #009719;
+    border-color: #009719;
+}
+
+
+.metro-tile-angrybirds {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/AngryBirds.jpg);
+    border-image: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/AngryBirds.jpg) 1;
+}
+
+
+.metro-tile-music {
+    background: url('https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Music.png');
+    background-color: #216583;
+    border-color: #216583;
+}
+
+
+.metro-tile-ie {
+    background: url('https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/IE.png');
+    background-color: #69A82E;
+    border-color: #69A82E;
+}
+
+
+.metro-tile-image {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Image.jpg);
+    border-color: black;
+}
+
+
+.metro-tile-tweet {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Tweet.png);
+    background-color: #2878EC;
+    border-color: #2878EC;
+}
+
+
+.metro-tile-msg {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Messaging.png);
+    background-color: rgb(135, 57, 5);
+    border-color: rgb(135, 57, 5);
+}
+
+
+.metro-tile-player {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Gangnam.jpg);
+    border-color: black;
+}
+
+
+.metro-tile-facebook {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Facebook.png);
+    background-color: #3B5998;
+    border-color: #3B5998;
+}
+
+
+.metro-tile-twitter {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Twitter.png);
+    background-color: #2878EC;
+    background-position: 0 10px;
+    border-color: #2878EC;
+}
+
+
+.metro-tile-aciii {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/AC3.jpg);
+    border-color: #e99b2b;
+    background-color: #e99b2b;
+}
+
+
+.metro-tile-gmail {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Gmail.png);
+    background-color: #009719;
+    border-color: #009719;
+}
+
+
+.metro-tile-dropbox {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Dropbox.png);
+    background-color: #2878EC;
+    border-color: #2878EC;
+}
+
+
+.metro-tile-blogger {
+    background: url(https://cssbox.googlecode.com/svn/demo/Windows8MetroTiles/img/Blogger.png);
+    background-color: #D8512B;
+    border-color: #D8512B;
+}
+
+
+div.metro-tile:hover {
+    -webkit-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+    -moz-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+    -ms-transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+    transform: scale(0.97) perspective(400px) rotateY(0deg) rotateX(0deg);
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+/*.modal-dialog {
+background-color:aquamarine !important;
+}*/
+
+/*.modal-content {
+background-color:black !important;
+opacity:0.4;
+}*/

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="../scripts/winstore-jscompat.js"></script>
+    <script src="../scripts/jquery-1.11.1.min.js"></script>
+    <script src="../scripts/customcheckbox.js"></script>
+    <script src="../scripts/angular.min.js"></script>
+    <script src="../scripts/Maps/app.js"></script>
+    <script src="../scripts/Maps/demodata.js"></script>
+    <link href="../css/site.css" rel="stylesheet" />
+    <link href="../css/checkboxmaps.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body ng-app="myapp" ng-controller="accountscntrl" style="background-color:#2d3e48; color:#2895cd">
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img id="backpagediv" src="../images/back_1.png" height="28" width="28" style="padding-top:0px; margin-top:10px" class="pull-left" ng-click="backtoPage()" />
+
+                        <a id="menu-toggle" href="javascript:void(0);" class="glyphicon btn-menu toggle" style="display:none">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                        <div style="padding-left:50px">
+                            <img id="menu-logo" src="../images/XView.png" height="36" width="36" />
+                            <a id="menu-title">Executive Dashboard</a>
+                            <!--<span style="color:#cc4141;font-size:18px; font-weight:bolder">eX</span>
+                            <span style="color:darkred; font-size:18px; font-weight:bolder">view</span>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <!-- Page content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="accountsdiv" class="text-center">
+                         Accounts
+                    </div>
+
+                    <a href="javascript:void(0);" style="color:#fff;text-decoration: none !important; float:right" onclick="clearcheckboxes()"> Clear All</a>
+                    <br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="repeatedlistaccountnames">
+                        <label class="checkboxselectalllabel"><input type="checkbox" name="Accountname" id="checkAll" /> Select All</label>
+                        <div ng-repeat="x in managers">
+                            <div class="checkboxlabel">
+                                <label class="label-for-check"><input type="checkbox" name="Accountname" 
+                                           id="{{x}}" value="{{x}}"
+                                           ng-checked="selection.indexOf(x) > -1"
+                                           ng-click="toggleSelection(x)"  onchange="Checkboxstatechange(this);" />{{x}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 nopadding">
+                    <div style="bottom:29px; position:fixed;">
+                        <input type="button" class="btn btn-md btn-primary applyaccountname" value="Go" ng-click="accountslistnames(x.AccountName);" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row" id="bottomNav">
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../mapFrame.html"><i class="fa fa-home fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-star fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-search fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../master.html"><i class="fa fa-sign-out fa-2x"></i><br></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,180 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+    <script src="scripts/angular-bing-maps.js"></script>
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript">
+
+        //function onload() {
+        //    $("#txtJSON").hide();
+        //    var strJSON = document.getElementById('txtJSON');
+        //    //    $.getJSON("mapsdata.json", function (json) {
+        //    //    alert(json);
+        //    //});
+
+
+        //    if (strJSON.value.length == 0) {
+        //        alert('Please provide pushpin data in JSON format');
+        //        return;
+        //    }
+
+        //    try {
+        //        var data = JSON.parse(strJSON.value);
+        //        SetPushPins(data);
+        //        strJSON.value = "";
+        //    }
+        //    catch (ex) {
+        //        alert('ERROR: Please provide valid JSON data');
+        //    }
+        //};
+
+        //function SetPushPins(PushPinData) {
+        //    if (PushPinData.length == 0)
+        //        return;
+        //    for (var i = 0; i < PushPinData.length; i++) {
+        //        var Loc = new Microsoft.Maps.Location(PushPinData[i].Lat, PushPinData[i].Lon);
+        //        var Pushpin = new Microsoft.Maps.Pushpin(Loc);
+        //        Pushpin.Title = PushPinData[i].Title;
+        //        Pushpin.Description = PushPinData[i].Description;
+
+        //        var InfoBox = new Microsoft.Maps.Infobox(Loc, { visible: false, offset: new Microsoft.Maps.Point(0, 30) });
+
+        //        Microsoft.Maps.Events.addHandler(Pushpin, 'click', function (e) {
+        //            InfoBox.setLocation(e.target.getLocation());
+        //            InfoBox.setOptions({
+        //                visible: true,
+        //                title: e.target.Title,
+        //                description: e.target.Description
+        //            });
+        //        });
+
+        //        InfoBoxEntity.push(InfoBox);
+        //        PushPinsEntity.push(Pushpin);
+        //    }
+        //};
+
+        var app = angular.module('angularBingMapExample', ['angularBingMaps']);
+        app.controller('ExampleController', function ($scope, $http) {
+            //$scope.textjson = false;
+            var strJSON = document.getElementById('txtJSON');
+            //   alert(strJSON);
+            //    $.getJSON("mapsdata.json", function (json) {
+            //    alert(json);
+            //});
+
+
+            if (strJSON.value.length == 0) {
+                alert('Please provide pushpin data in JSON format');
+                return;
+            }
+
+            try {
+                var data = JSON.parse(strJSON.value);
+                SetPushPins(data);
+                strJSON.value = "";
+            }
+            catch (ex) {
+                alert('ERROR: Please provide valid JSON data');
+            }
+            function SetPushPins(PushPinData) {
+                if (PushPinData.length == 0)
+                    return;
+                for (var i = 0; i < PushPinData.length; i++) {
+                    var Loc = new Microsoft.Maps.Location(PushPinData[i].Lat, PushPinData[i].Lon);
+                    var Pushpin = new Microsoft.Maps.Pushpin(Loc);
+                    Pushpin.Title = PushPinData[i].Title;
+                    Pushpin.Description = PushPinData[i].Description;
+
+                    var InfoBox = new Microsoft.Maps.Infobox(Loc, { visible: false, offset: new Microsoft.Maps.Point(0, 30) });
+
+                    Microsoft.Maps.Events.addHandler(Pushpin, 'click', function (e) {
+                        InfoBox.setLocation(e.target.getLocation());
+                        InfoBox.setOptions({
+                            visible: true,
+                            title: e.target.Title,
+                            description: e.target.Description
+                        });
+                    });
+
+                    InfoBoxEntity.push(InfoBox);
+                    PushPinsEntity.push(Pushpin);
+                }
+            };
+
+            ///*<bing-map> directive options*/
+            //$scope.mapOptions = {};
+            //$scope.mapOptions.center = { latitude: 30.614919, longitude: -96.342316 };
+            //$scope.mapOptions.zoom = 6;
+            //$scope.mapOptions.mapType = 'a';
+
+            ///*<pushpin> directive options*/
+            //$scope.pushpin = {};
+            //$scope.pushpin.location = { latitude: 30.614919, longitude: -96.342316 };
+            //$scope.pushpin.options = {
+            //    draggable: true
+            //}
+            //$scope.pushpin.events = {
+            //    click: function () {
+            //        $scope.infobox.visible = !$scope.infobox.visible;
+            //    }
+            //};
+
+            //$scope.infobox = {};
+            //$scope.infobox.options = {
+            //    offset: new Microsoft.Maps.Point(0, 25),
+            //    width: 125,
+            //    height: 50
+            //};
+            //$scope.infobox.title = 'Wipro';
+            //$scope.infobox.visible = true;
+
+        });
+    </script>
+
+    <style type="text/css">
+        bing-map {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body ng-app="angularBingMapExample">
+
+    <!--<div id="myMap" style="position:relative; width:600px; height:600px;">
+        <bing-map credentials="'AgMK0Wx0_W5Qciirs_6bwdETCvJ23jTnheqNdCNPRy99wMX7I-DGFqcNz_wJCb8h'"
+                  center="mapOptions.center"
+                  zoom="mapOptions.zoom"
+                  mapType="mapOptions.mapType">
+        </bing-map>
+            </div>-->
+    <div class="bing-map-container" ng-controller="ExampleController">
+            p credentials="'AgMK0Wx0_W5Qciirs_6bwdETCvJ23jTnheqNdCNPRy99wMX7I-DGFqcNz_wJCb8h'"
+                  center="mapOptions.center"
+                  zoom="mapOptions.zoom"
+                  mapType="mapOptions.mapType">
+
+            <pushpin lat="pushpin.location.latitude"
+                     lng="pushpin.location.longitude"
+                     options="pushpin.options"
+                     events="pushpin.events">
+                <info-box options="infobox.options"
+                          title="infobox.title"
+                          visible="infobox.visible"></info-box>
+            </pushpin>
+
+        </bing-map>
+
+    </div>
+
+
+    <textarea id="txtJSON" ng-if="textjson" class="txt_json hidden">[{"Lat":28.633,"Lon":77.219,"Title":"New Delhi, India","Description":"Capital and one of the Historical place of India"},{"Lat":51.48549938466352,"Lon":-0.10674425522154696,"Title":"London, UK","Description":"Beautiful place of England"},{"Lat":55.752478073030616,"Lon":37.624426399075325,"Title":"Moscow, Russia","Description":"Revolutionary place and Capital of Russia"},{"Lat":30.032022566346278,"Lon":31.23587659438783,"Title":"Cairo, Egypt","Description":"A Place of Mysterious Pyramids"},{"Lat":-23.04332469099961,"Lon":-43.17315050522155,"Title":"Rio de Janeiro, Brazil","Description":"Beautiful place of Brazil"},{"Lat":40.685650770389664,"Lon":-74.02275988022154,"Title":"New York City, USA","Description":"One of the coolest city"},{"Lat":37.89307713077123,"Lon":23.78165296157533,"Title":"Athens, Greece","Description":"The City of Modern Civilization"},{"Lat":48.8609324756753,"Lon":2.361059699856578,"Title":"Paris, France","Description":"The City of Love"}]</textarea>
+
+
+
+
+</body>
+</html>

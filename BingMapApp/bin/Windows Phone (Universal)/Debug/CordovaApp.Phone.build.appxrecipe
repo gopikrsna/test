@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>D-113077851</Machine>
+    <WindowsUser>v-gochi</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>ac547b40-dabd-11e5-8464-4b91db87aff9</PackageIdentityName>
+    <IntermediateOutputPath>D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\build\phone\bld\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\build\phone\debug\x86\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\SplashScreenPhone.scale-240.png">
+      <PackagePath>images\SplashScreenPhone.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square150x150Logo.scale-240.png">
+      <PackagePath>images\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square44x44Logo.scale-240.png">
+      <PackagePath>images\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Square71x71Logo.scale-240.png">
+      <PackagePath>images\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\StoreLogo.scale-240.png">
+      <PackagePath>images\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\images\Wide310x150Logo.scale-240.png">
+      <PackagePath>images\Wide310x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\backarrow-icon.png">
+      <PackagePath>www\images\backarrow-icon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\backarrow-icon1.png">
+      <PackagePath>www\images\backarrow-icon1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\back_1.png">
+      <PackagePath>www\images\back_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\barchart.png">
+      <PackagePath>www\images\barchart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\bottomimage.png">
+      <PackagePath>www\images\bottomimage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\checkbox1.png">
+      <PackagePath>www\images\checkbox1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\coming_soon.PNG">
+      <PackagePath>www\images\coming_soon.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\Green_pin.png">
+      <PackagePath>www\images\Green_pin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\img.png">
+      <PackagePath>www\images\img.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\loading.png">
+      <PackagePath>www\images\loading.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\MB__back.png">
+      <PackagePath>www\images\MB__back.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\piechart123.png">
+      <PackagePath>www\images\piechart123.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\piegraph.png">
+      <PackagePath>www\images\piegraph.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\quarters.png">
+      <PackagePath>www\images\quarters.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\raw.png">
+      <PackagePath>www\images\raw.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\Red_pin.png">
+      <PackagePath>www\images\Red_pin.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\revenue_chart.png">
+      <PackagePath>www\images\revenue_chart.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\tiles.png">
+      <PackagePath>www\images\tiles.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\wiprolog.png">
+      <PackagePath>www\images\wiprolog.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\wipro_transparent.png">
+      <PackagePath>www\images\wipro_transparent.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\wipro_waves.png">
+      <PackagePath>www\images\wipro_waves.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\XView.png">
+      <PackagePath>www\images\XView.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\xview_full.png">
+      <PackagePath>www\images\xview_full.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\angular-bing-maps.js">
+      <PackagePath>www\scripts\angular-bing-maps.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\angular.min.js">
+      <PackagePath>www\scripts\angular.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\bootstrap.min.js">
+      <PackagePath>www\scripts\bootstrap.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\CorsMsg.js">
+      <PackagePath>www\scripts\CorsMsg.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\custom.js">
+      <PackagePath>www\scripts\custom.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\customcheckbox.js">
+      <PackagePath>www\scripts\customcheckbox.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\jquery-1.11.1.min.js">
+      <PackagePath>www\scripts\jquery-1.11.1.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\jquery.bxslider.min.js">
+      <PackagePath>www\scripts\jquery.bxslider.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\app.js">
+      <PackagePath>www\scripts\Maps\app.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\Chart.js">
+      <PackagePath>www\scripts\Maps\Chart.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\demodata.js">
+      <PackagePath>www\scripts\Maps\demodata.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\demopulsedata.js">
+      <PackagePath>www\scripts\Maps\demopulsedata.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\index.js">
+      <PackagePath>www\scripts\Maps\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\mychart.js">
+      <PackagePath>www\scripts\Maps\mychart.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\platformOverrides.js">
+      <PackagePath>www\scripts\Maps\platformOverrides.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\Maps\revenue.js">
+      <PackagePath>www\scripts\Maps\revenue.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\scripts\xlsx.core.min.js">
+      <PackagePath>www\scripts\xlsx.core.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\bootstrap-theme.css">
+      <PackagePath>www\css\bootstrap-theme.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\bootstrap-theme.min.css">
+      <PackagePath>www\css\bootstrap-theme.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\bootstrap.css">
+      <PackagePath>www\css\bootstrap.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\bootstrap.min.css">
+      <PackagePath>www\css\bootstrap.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\checkboxmaps.css">
+      <PackagePath>www\css\checkboxmaps.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\custom.css">
+      <PackagePath>www\css\custom.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\form-elements.css">
+      <PackagePath>www\css\form-elements.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\googleapifonts.css">
+      <PackagePath>www\css\googleapifonts.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\jquery.bxslider.css">
+      <PackagePath>www\css\jquery.bxslider.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\site.css">
+      <PackagePath>www\css\site.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\style.css">
+      <PackagePath>www\css\style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\css\font-awesome.css">
+      <PackagePath>www\font-awesome\css\font-awesome.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\css\font-awesome.min.css">
+      <PackagePath>www\font-awesome\css\font-awesome.min.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\bootstrap-theme.css.map">
+      <PackagePath>www\css\bootstrap-theme.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\css\bootstrap.css.map">
+      <PackagePath>www\css\bootstrap.css.map</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\demomaps.html">
+      <PackagePath>www\demomaps.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\map.html">
+      <PackagePath>www\map.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\mapFrame.html">
+      <PackagePath>www\mapFrame.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\map_master.html">
+      <PackagePath>www\map_master.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\master.html">
+      <PackagePath>www\master.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\startupPage.html">
+      <PackagePath>www\startupPage.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\Accountmanagertiles.html">
+      <PackagePath>www\Views\Accountmanagertiles.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\chart.html">
+      <PackagePath>www\Views\chart.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\CHMCharts.html">
+      <PackagePath>www\Views\CHMCharts.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\CHMParameters.html">
+      <PackagePath>www\Views\CHMParameters.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\Consolidateddata.html">
+      <PackagePath>www\Views\Consolidateddata.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\customersatisfaction.html">
+      <PackagePath>www\Views\customersatisfaction.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\DMTilesDisplay.html">
+      <PackagePath>www\Views\DMTilesDisplay.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\index.html">
+      <PackagePath>www\Views\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\ListofAccounts.html">
+      <PackagePath>www\Views\ListofAccounts.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\ListofAccountsManger.html">
+      <PackagePath>www\Views\ListofAccountsManger.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\ListofDMs.html">
+      <PackagePath>www\Views\ListofDMs.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\ManagersTiles.html">
+      <PackagePath>www\Views\ManagersTiles.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\Views\revenue.html">
+      <PackagePath>www\Views\revenue.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\fonts\fontawesome-webfont.eot">
+      <PackagePath>www\font-awesome\fonts\fontawesome-webfont.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\fonts\fontawesome-webfont.svg">
+      <PackagePath>www\font-awesome\fonts\fontawesome-webfont.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\fonts\fontawesome-webfont.ttf">
+      <PackagePath>www\font-awesome\fonts\fontawesome-webfont.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\fonts\fontawesome-webfont.woff">
+      <PackagePath>www\font-awesome\fonts\fontawesome-webfont.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\fonts\FontAwesome.otf">
+      <PackagePath>www\font-awesome\fonts\FontAwesome.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\bordered-pulled.less">
+      <PackagePath>www\font-awesome\less\bordered-pulled.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\core.less">
+      <PackagePath>www\font-awesome\less\core.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\fixed-width.less">
+      <PackagePath>www\font-awesome\less\fixed-width.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\font-awesome.less">
+      <PackagePath>www\font-awesome\less\font-awesome.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\icons.less">
+      <PackagePath>www\font-awesome\less\icons.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\larger.less">
+      <PackagePath>www\font-awesome\less\larger.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\list.less">
+      <PackagePath>www\font-awesome\less\list.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\mixins.less">
+      <PackagePath>www\font-awesome\less\mixins.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\path.less">
+      <PackagePath>www\font-awesome\less\path.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\rotated-flipped.less">
+      <PackagePath>www\font-awesome\less\rotated-flipped.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\spinning.less">
+      <PackagePath>www\font-awesome\less\spinning.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\stacked.less">
+      <PackagePath>www\font-awesome\less\stacked.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\less\variables.less">
+      <PackagePath>www\font-awesome\less\variables.less</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\font-awesome.scss">
+      <PackagePath>www\font-awesome\scss\font-awesome.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_bordered-pulled.scss">
+      <PackagePath>www\font-awesome\scss\_bordered-pulled.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_core.scss">
+      <PackagePath>www\font-awesome\scss\_core.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_fixed-width.scss">
+      <PackagePath>www\font-awesome\scss\_fixed-width.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_icons.scss">
+      <PackagePath>www\font-awesome\scss\_icons.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_larger.scss">
+      <PackagePath>www\font-awesome\scss\_larger.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_list.scss">
+      <PackagePath>www\font-awesome\scss\_list.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_mixins.scss">
+      <PackagePath>www\font-awesome\scss\_mixins.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_path.scss">
+      <PackagePath>www\font-awesome\scss\_path.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_rotated-flipped.scss">
+      <PackagePath>www\font-awesome\scss\_rotated-flipped.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_spinning.scss">
+      <PackagePath>www\font-awesome\scss\_spinning.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_stacked.scss">
+      <PackagePath>www\font-awesome\scss\_stacked.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\font-awesome\scss\_variables.scss">
+      <PackagePath>www\font-awesome\scss\_variables.scss</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\fonts\glyphicons-halflings-regular.woff2">
+      <PackagePath>www\fonts\glyphicons-halflings-regular.woff2</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\Green_pin.ico">
+      <PackagePath>www\images\Green_pin.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\Red_pin.ico">
+      <PackagePath>www\images\Red_pin.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\html5_column_chart.jpg">
+      <PackagePath>www\images\html5_column_chart.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\linechat.jpg">
+      <PackagePath>www\images\linechat.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\wipro-dashboard.jpg">
+      <PackagePath>www\images\wipro-dashboard.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\wipro-plain-dashboard.jpg">
+      <PackagePath>www\images\wipro-plain-dashboard.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\www\images\spinner.gif">
+      <PackagePath>www\images\spinner.gif</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\GopikrishnaShare\eXview\LatestExecViewClient\BingMapApp\platforms\windows\build\phone\debug\x86\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\">
+      <Name>Microsoft.Phone.WinJS.2.1</Name>
+      <Version>1.0.9651.0</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Phone.WinJS.2.1, MinVersion=1.0.9651.0</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.Phone.WinJS.2.1\1.0\Microsoft.Phone.WinJS.2.1.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

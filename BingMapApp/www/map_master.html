@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="about:blank">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-eval' *; style-src 'unsafe-inline' *; img-src * data:">
+
+    <title>Executive Dashboard</title>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link rel="stylesheet" href="https://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css">-->
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!--<script src="https://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <style>
+        iframe {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 0;
+              margin:0;
+            padding:0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--style="background-image: url('images/wipro-plain-dashboard.jpg'); background-size: 360px 640px; background-repeat: no-repeat;"-->
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a id="menu-toggle" href="#" class="glyphicon btn-menu toggle" style="display:block">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                        <div style="padding-left:50px">
+                            <img id="menu-logo" src="images/XView.png" height="36" width="36" />
+                            <a id="menu-title">Executive Dashboard</a>
+                            <!--<span style="color:#cc4141;font-size:18px; font-weight:bolder">eX</span>
+                        <span style="color:darkred; font-size:18px; font-weight:bolder">view</span>-->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand" style="color:#FFF">
+                        <img id="menu-logo" src="images/XView.png" height="36" width="36" />
+                        <strong>Executive Dashboard</strong>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Countries<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse in" aria-expanded="true">
+                            <li>
+                                <a href="#"><i class="fa fa-plane fa-fw"></i> U.S.A</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-plane fa-fw"></i> U.K</a>
+                            </li>
+                            <li class="">
+                                <a href="#"><i class="fa fa-plane fa-fw"></i> India <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level collapse" aria-expanded="false" style="height: 0px;">
+                                    <li>
+                                        <a href="#"><i class="fa fa-map-marker fa-fw"></i> Hyderabad</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-map-marker fa-fw"></i> Bangalore</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-map-marker fa-fw"></i> Chennai</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-map-marker fa-fw"></i> Mumbai</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-third-level -->
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                </ul>
+                <!--<ul class="nav navbar-nav" style="background-color:black;font:bold; position:fixed; float:right;margin-left:290px">
+                <li class="active"><a href="#" title="Some title here"><i class="fa fa-home fa-3x"></i><br />Home</a></li>
+                <li><a href="#"><i class="fa fa-book fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-user fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-users fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-map-marker fa-3x"></i></a></li>
+                <li><a href="#"><i class="fa fa-power-off fa-3x"></i></a></li>
+
+            </ul>-->
+            </nav>
+        </div>
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="page-content">
+                <div class="container-fluid" id="mapWindow">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <iframe id="inlineWebContentIframe" src="ms-appx-web:///www/demomaps.html"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <!--<div id="footer" style="bottom:0; padding:0; position:fixed">
+            <img src="images/wipro_waves.png" style="height:100%; width:100%" />
+        </div>-->
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/custom.js"></script>    
+</body>
+</html>

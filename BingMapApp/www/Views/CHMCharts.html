@@ -1,0 +1,240 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <title>ChartApp</title>-->
+    <script src="../scripts/winstore-jscompat.js"></script>
+    <script src="../scripts/jquery-1.11.1.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/site.css" rel="stylesheet" />
+    <script src="../scripts/angular.min.js"></script>
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="../scripts/Maps/app.js"></script>
+
+    <script src="../scripts/Maps/Chart.js"></script>
+    <script src="../scripts/Maps/index.js"></script>
+    <link href="../css/custom.css" rel="stylesheet" />
+    <style>
+        a.quaterlink {
+            color: #2895cd;
+            text-decoration: none !important;
+            border: none;
+            outline: none;
+        }
+            /* unvisited link */
+            a.quaterlink:visited {
+                color: #2895cd;
+                text-decoration: none !important;
+                border: none;
+                outline: none;
+            }
+            /* visited link */
+            a.quaterlink:hover {
+                color: #2895cd;
+                text-decoration: none !important;
+            }
+            /* mouse over link */
+            a.quaterlink:active {
+                color: #029AFF;
+                text-decoration: none !important;
+                border: none;
+                outline: none;
+            }
+            /* selected link */
+            a.quaterlink:focus {
+                text-decoration: none;
+                border-bottom: 2px solid #000000;
+                color: #000000;
+                outline: none;
+            }
+
+
+        .noborder {
+            border-left: 0 !important;
+            border-right: 0 !important;
+            border-top: 0 !important;
+        }
+
+        hr {
+            -moz-border-bottom-colors: none;
+            -moz-border-image: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: #97cbe2;
+            border-style: solid none;
+            border-width: 1px 0;
+        }
+
+            hr.acheived {
+                border-color: #2895cd;
+                border-style: solid none;
+                border-width: 2px 0;
+            }
+
+        .quaters {
+            min-height: 20px;
+            padding: 0px;
+            margin-bottom: 20px;
+            background-color: #e0dede;
+            border: 1px solid #e3e3e3;
+            border-radius: 4px;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+        }
+
+        .alignleft {
+            margin-left: -5px;
+        }
+    </style>
+
+</head>
+<body ng-app="myapp" ng-controller="chmchartcntrl">
+
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img id="backpagediv" src="../images/back_1.png" height="28" width="28" style="padding-top:0px; margin-top:10px" class="pull-left" ng-click="backtoPage();" />
+
+                        <a id="menu-toggle" href="javascript:void(0);" class="glyphicon btn-menu toggle" style="display:none">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                        <div style="padding-left:50px">
+                            <img id="menu-logo" src="../images/XView.png" height="36" width="36" />
+                            <a id="menu-title">Executive Dashboard</a>
+                            <!--<span style="color:#cc4141;font-size:18px; font-weight:bolder">eX</span>
+                            <span style="color:darkred; font-size:18px; font-weight:bolder">view</span>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <!-- Page content -->
+        <div class="container">
+            <div class="row quaters">
+                <div class="col-md-6 col-xs-6 hidden">
+                    <label>
+                        <input type="radio" name="chart" value="Line" onclick="selectedgraph();"> Line Chart
+                    </label>
+
+                </div>
+                <div class="col-md-6 col-xs-6 hidden">
+                    <label>
+                        <input type="radio" name="chart" checked="checked" onclick="selectedgraph();" value="Bar"> Bar Chart
+                    </label>
+                </div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder" id="firstQ">Current Qtr </a></div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder" id="thirdQ">Prev. Qtr</a></div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder" id="fourthQ">Last Two Qtrs</a></div>
+                <div class="col-md-3 col-xs-3 alignleft"><a href="javascript:void(0)" class="quaterlink btn btn-mini nopadding noborder hidden" id="secondQ">Next Qtr</a></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <!--<div class="panel-heading">
+                            Basic Tabs
+                        </div>-->
+                        <!-- /.panel-heading -->
+                        <div class="panel-body" style="padding:8px !important;">
+                            <!-- Nav tabs -->
+                            <ul class="list-inline">
+                                <li class="active nopadding" style="text-align:center; width:32%">
+                                    <a href="#gross" data-toggle="tab" aria-expanded="false">
+                                        <canvas id="minicanvas1" class="nopadding" style="width:70px; height:90px;"></canvas>
+                                        BHC
+                                    </a>
+                                    <!--<span style="text-align:center">31M </span>-->
+                                </li>
+                                <li class="nopadding" style="text-align:center; width:32%">
+                                    <a href="#bulge" data-toggle="tab" aria-expanded="false">
+                                        <canvas id="minicanvas2" style="width:70px; height:90px;"></canvas>
+                                        Buldge
+                                    </a>
+                                    <!--<span style="text-align:center">42M </span>-->
+                                </li>
+                                <li class="nopadding" style="text-align:center; width:32%">
+                                    <a href="#rookie" data-toggle="tab" aria-expanded="false">
+                                        <canvas id="minicanvas3" style="width:70px; height:90px;"></canvas>
+                                        Rookie
+                                    </a>
+                                    <!--<span style="text-align:center">56M </span>-->
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="gross">
+                                    <!-- canvas1 -->
+                                    <canvas id="canvas1"></canvas>
+                                    <div>
+                                        <h4> Total</h4>
+                                        <hr class="acheived nopadding" />
+                                        <div>
+                                            <span>Head Count</span>
+                                            <span id="HeadCount" class="pull-right"></span>
+                                        </div>
+                                        <hr class="nopadding" />
+                                        <div>
+                                            <span> Billable</span>
+                                            <span id="Billable" class="pull-right"></span>
+                                        </div>
+                                        <hr class="nopadding" />
+                                        <div>
+                                            <span> Utilization</span>
+                                            <span id="Utilization" class="pull-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="bulge">
+                                    <!-- canvas2 -->
+                                    <canvas id="canvas2"></canvas>
+                                    <div>
+                                        <h4> Bulge Total</h4>
+                                        <hr class="acheived nopadding" />
+                                        <div>
+                                            <span> Bulge</span>
+                                            <span id="BillableBulge" class="pull-right"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="rookie">
+                                    <!-- canvas3 -->
+                                    <canvas id="canvas3"></canvas>
+                                    <div>
+                                        <h4> Rookie Total</h4>
+                                        <hr class="acheived nopadding" />
+                                        <div>
+                                            <span> Rookie</span>
+                                            <span id="BillableRookie" class="pull-right"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row" id="bottomNav">
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../mapFrame.html"><i class="fa fa-home fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-star fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-search fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../master.html"><i class="fa fa-sign-out fa-2x"></i><br></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

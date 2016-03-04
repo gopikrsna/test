@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- CSS Refernces  -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/site.css" rel="stylesheet" />
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../css/custom.css" rel="stylesheet" />
+    <link href="../css/jquery.bxslider.css" rel="stylesheet" />
+    <!-- Scripts Ref -->
+    <script src="../scripts/winstore-jscompat.js"></script>
+    <script src="../scripts/jquery-1.11.1.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/angular.min.js"></script>
+    <script src="../scripts/Maps/app.js"></script>
+    <script src="../scripts/jquery.bxslider.min.js"></script>
+
+</head>
+
+<body ng-app="myapp" ng-controller="AMCntrl">
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img id="backpagediv" src="../images/back_1.png" height="28" width="28" style="padding-top:0px; margin-top:10px" class="pull-left" ng-click="backtoPage()" />
+
+                        <a id="menu-toggle" href="javascript:void(0);" class="glyphicon btn-menu toggle" style="display:none">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                        <div style="padding-left:50px">
+                            <img id="menu-logo" src="../images/XView.png" height="36" width="36" />
+                            <a id="menu-title">Executive Dashboard</a>
+                            <!--<span style="color:#cc4141;font-size:18px; font-weight:bolder">eX</span>
+                            <span style="color:darkred; font-size:18px; font-weight:bolder">view</span>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page content -->
+        <div class="container" style="margin-top:20px">
+            <div class="row">
+                <div class="col-md-12">
+                    <div data-toggle="modal" data-target="#myModal" class="metro-tile metro-tile-small metro-tile-store">
+                        <i class="fa fa-trophy fa-3x"></i>
+                        <div class="projectiondiv"> Opportunities Won </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    <div data-toggle="modal" data-target="#myModal" class="metro-tile metro-tile-small metro-tile-openposition">
+                        <i class="fa fa-flask fa-3x"></i>
+                        <div class="projectiondiv">
+                            Opportunities Lost
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    <div data-toggle="modal" data-target="#myModal" class="metro-tile metro-tile-small metro-tile-Atterations">
+                        <i class="fa fa-line-chart fa-3x"></i>
+                        <div class="projectiondiv">
+                            Opportunities in – Progress<div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-12">
+                    <div data-toggle="modal" data-target="#myModal" class="metro-tile metro-tile-small metro-tile-Cost">
+                        <i class="fa fa-group fa-3x"></i>
+                        <div class="projectiondiv"> Leads </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:5px;">
+                <div class="col-md-12 nopadding">
+                    <ul class="bxslider" style="height:30px; font-size:15px; background-color:#A9D0F5">
+                        <li style="color:#10168e;">Welcome to Rashmi! Rashmi joining as HR Head for PSP.</li>
+                        <li style="color:#931a34;">Account planning first review with Bala completed</li>
+                        <li style="color:#10168e;">MBR- Feb’16 completed with Customers. </li>
+                        <li style="color:#931a34;">RideBuzz-CarPool App presented to Sr.Management.</li>
+                        <li style="color:#10168e;">Coming up - Executive Dashboard – ExView, WiproTechTalk – Technical discussion forum.</li>
+                        <li style="color:#931a34;">Moonshot hackers – Place to get recognition for your Ideas.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row" id="bottomNav">
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../mapFrame.html"><i class="fa fa-home fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-star fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-search fa-2x"></i><br></a></div>
+                    <div class="col-xs-3 text-center"><a class="footerAnchor" href="../master.html"><i class="fa fa-sign-out fa-2x"></i><br></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal popup -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="margin-top:40px">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--<div class="modal-header" style="background-color: rgb(24,98,173);">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        Work in Progress...
+                    </h4>
+                </div>-->
+                <div class="modal-body">
+                    <!--Work in Progress-->
+                    <img src="../images/coming_soon.PNG" width="340" />
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-primary">Show</button>-->
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+</body>
+</html>

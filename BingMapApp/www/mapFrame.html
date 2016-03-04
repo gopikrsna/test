@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-eval' *; style-src 'unsafe-inline' *; img-src * data:">
+    <script src="cordova.js"></script>-->
+    <!--<script src="scripts/winstore-jscompat.js"></script>-->
+    <title></title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'unsafe-eval' *; style-src 'unsafe-inline' *; img-src * data:">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">-->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <!--<script src="https://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>-->
+
+    <link href="css/custom.css" rel="stylesheet" />
+    <link href="css/site.css" rel="stylesheet" />
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="scripts/winstore-jscompat.js"></script>
+    <script src="scripts/jquery-1.11.1.min.js"></script>
+    <!--<script src="cordova.js"></script>-->
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/custom.js"></script>
+    <script src="scripts/CorsMsg.js"></script>
+    <style>
+        iframe {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            /*top: 0px;*/
+            top: 50px;
+            z-index: -1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- header -->
+        <div id="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="backpagediv" class="hidden" style="padding-top:0px;">
+                            <img src="images/back_1.png" height="24" width="24" class="pull-left" onclick="backtoPage()" />
+                        </div>
+
+                        <a id="menu-toggle" href="javascript:void(0);" class="glyphicon btn-menu toggle" style="display:none">
+                            <i class="fa fa-bars fa-2x"></i>
+                        </a>
+                        <div>
+                            <div style="padding-left:50px">
+                                <img id="menu-logo" src="images/XView.png" height="36" width="36" />
+                                <a id="menu-title">Executive Dashboard</a>
+                                <div style="float:right">
+                                    <div id="Loading" style="display:none;"><img src="./images/spinner.gif" /></div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <nav id="spy">
+                <ul class="sidebar-nav nav">
+                    <li class="sidebar-brand" style="color:#FFF">
+                        <img id="menu-logo" src="images/XView.png" height="36" width="36" />
+                        <strong>Executive Dashboard</strong>
+                    </li>
+                    <li>
+                        <!--<a href="#home"><span class="fa fa-home fa-1x white solo"> Home</span></a>-->
+                        <a href="#home"><i class="fa fa-home fa-1x white solo"> </i> Home</a>
+
+                    </li>
+                    <li>
+                        <!--<a href="#anch1">
+                            <span class="fa fa-book fa-1x white solo">Accounts</span>
+                        </a>-->
+                        <a href="#anch1">
+                            <i class="fa fa-book fa-1x white solo"></i> Accounts
+                        </a>
+                    </li>
+                    <li>
+                        <!--<a href="#anch2">
+                            <span class="fa fa-user fa-1x white solo">Account Manager</span>
+                        </a>-->
+                        <a href="#anch2">
+                            <i class="fa fa-user fa-1x white solo"></i> Account Manager
+                        </a>
+                    </li>
+                    <li>
+                        <!--<a href="#anch3">
+                            <span class="fa fa-users fa-1x white solo">Delivery Managers</span>
+                        </a>-->
+                        <a href="#anch3">
+                            <i class="fa fa-users fa-1x white solo"></i> Delivery Managers
+                        </a>
+                    </li>
+                    <li>
+                        <!--<a href="#anch4">
+                            <span class="fa fa-power-off fa-1x white solo">Log out</span>
+                        </a>-->
+                        <a href="#anch4">
+                            <i class="fa fa-power-off fa-1x white solo"></i> Log out
+                        </a>
+                    </li>
+                </ul>
+                <!--<ul class="nav navbar-nav" style="background-color:black;font:bold; position:fixed; float:right;margin-left:290px">
+                    <li class="active"><a href="#" title="Some title here"><i class="fa fa-home fa-3x"></i><br />Home</a></li>
+                    <li><a href="#"><i class="fa fa-book fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-user fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-users fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-map-marker fa-3x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-power-off fa-3x"></i></a></li>
+
+                </ul>-->
+            </nav>
+        </div>
+        <!-- Page content -->
+        <div id="page-content-wrapper">
+            <div class="page-content">
+                <div class="container-fluid" id="loginWindow">
+                    <div class="row">
+                        <iframe id="inlineWebContentIframe" src="ms-appx-web:///www/demomaps.html"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="col-xs-12">
+            <div class="row" id="bottomNav">
+                <div class="col-xs-3 text-center"><a class="footerAnchor" href="mapFrame.html"><i class="fa fa-home fa-2x"></i><br></a></div>
+                <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-star fa-2x"></i><br></a></div>
+                <div class="col-xs-3 text-center"><a class="footerAnchor" href="#"><i class="fa fa-search fa-2x"></i><br></a></div>
+                <div class="col-xs-3 text-center"><a class="footerAnchor" href="master.html"><i class="fa fa-sign-out fa-2x"></i><br></a></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+
+        CORSMsg.ReceiveMsg(function (jData) {
+            //parent.document.location.href = "ms-appx-web://" + document.location.host + "/www/" + jData.data;;
+            //window.top.location.href = "ms-appx:///www/" + jData.data;
+            //window.location.href = "ms-appx:///www/views/test.html" ;
+            window.location.href = jData.data;
+            //window.top.location.href = "http://google.co.in";// jData.data;
+        }, true);
+
+        //(function () {
+
+        //    var iframe;
+        //    document.body.onload = function () {
+        //        var domain = "ms-appx-web://" + document.location.host;
+        //    };
+
+        //})();
+
+    </script>
+
+
+</body>
+</html>
