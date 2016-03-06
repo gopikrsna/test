@@ -14,6 +14,7 @@
     "AppPackages\\CordovaApp.Windows_1.0.0.16_arm_Test\\Add-AppDevPackage.resources\\es-ES\\Add-AppDevPackage.psd1",
     "www\\css\\custom.css",
     "merges\\windows\\scripts\\winstore-jscompat.js",
+    "www\\images\\ajax-loader.gif",
     "res\\icons\\ios\\icon-60.png",
     "AppPackages\\CordovaApp.Phone_1.0.0.7_x86.appxupload",
     "www\\images\\tiles.png",
@@ -42,6 +43,7 @@
     "res\\icons\\android\\icon-48-mdpi.png",
     "www\\Views\\DMTilesDisplay.html",
     "AppPackages\\CordovaApp.Windows_1.0.0.16_arm_Test\\Add-AppDevPackage.resources\\fr-FR\\Add-AppDevPackage.psd1",
+    "www\\images\\290.gif",
     "www\\scripts\\jquery-1.11.1.min.js",
     "res\\icons\\ios\\icon-72.png",
     "res\\icons\\ios\\icon-76.png",
@@ -265,27 +267,17 @@
     "res\\icons\\windows\\Square44x44Logo.scale-240.png",
     "res\\screens\\android\\screen-mdpi-portrait.png",
     "www\\scripts\\maps\\app.js",
-    "www\\views\\chmcharts.html",
-    "www\\views\\revenue.html",
-    "www\\views\\dmtilesdisplay.html",
-    "www\\views\\listofaccounts.html",
-    "www\\views\\listofaccountsmanger.html",
-    "www\\views\\listofdms.html",
-    "www\\views\\ManagersTiles.html"
+    "www\\scripts\\maps\\Chart.js",
+    "www\\images\\image_961384.gif",
+    "www\\images\\image_961391.gif",
+    "www\\images\\image_961403.gif"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [
     "cordova-plugin-whitelist@1.2.1"
   ],
   "deletedPluginsIos": [],
-  "changedFiles": [
-    "www\\views\\revenue.html",
-    "www\\views\\dmtilesdisplay.html",
-    "www\\views\\listofaccounts.html",
-    "www\\views\\listofaccountsmanger.html",
-    "www\\views\\listofdms.html",
-    "www\\views\\ManagersTiles.html"
-  ],
+  "changedFiles": [],
   "deletedFiles": [],
   "addedPlugins": [],
   "deletedPlugins": []

@@ -77,6 +77,7 @@ function LoadMap() {
 
         SetPushPins(data);
         strJSON.value = "";
+        document.getElementById("Loading").style.display = "none";
     }
     catch (ex) {
         alert('ERROR: Please provide valid JSON data');
@@ -463,21 +464,333 @@ function getCurrentMonthAndYear()
     return year+"-"+month;
 }
 app.controller('revenuecntrl', function ($scope, $http, $location, Serviceurl) {
-    //code         
+    //code     
 
+    function getListMonthNames(type) {
+        debugger;
+        var currentQuater = getCurrentQuater();
+        var label = [];
+        //
+        if (type == "current") {
+            if (currentQuater == 4) {
+                label.push("jan", "feb", "mar");
+                return label;
+            }
+            if (currentQuater == 3) {
+                label.push("oct", "nov", "dec");
+                return label;
+            }
+            if (currentQuater == 2) {
+                label.push("jul", "aug", "sep");
+                return label;
+            }
+            if (currentQuater == 1) {
+                label.push("oct", "nov", "dec");
+                return label;
+            }
+        }
+        if (type == "next") {
+            if (currentQuater == 4) {
+                label.push("apr", "may", "jun");
+                return label;
+            }
+            if (currentQuater == 3) {
+                label.push("jan", "feb", "jun");
+                return label;
+            }
+            if (currentQuater == 2) {
+                label.push("oct", "nov", "dec");
+                return label;
+            }
+            if (currentQuater == 1) {
+                label.push("jul", "aug", "sep");
+                return label;
+            }
+        }
+
+        if (type == "previous") {
+            if (currentQuater == 4) {
+                label.push("oct", "nov", "dec");
+                return label;
+            }
+            if (currentQuater == 3) {
+                label.push("jul", "aug", "sep");
+                return label;
+            }
+            if (currentQuater == 2) {
+                label.push("apr", "may", "jun");
+                return label;
+            }
+            if (currentQuater == 1) {
+                label.push("jan", "feb", "mar");
+                return label;
+            }
+        }
+
+        if (type == "lasttwoquaters") {
+            if (currentQuater == 4) {
+
+                label.push("jul", "aug", "sep","oct","nov","dec");
+                return label;
+            }
+            if (currentQuater == 3) {
+                label.push("apr", "may", "jun", "jul", "aug", "sep");
+                return label;
+               
+            }
+            if (currentQuater == 2) {
+
+                label.push("jan", "feb", "mar", "apr", "may", "jun");
+                return label;               
+            }
+            if (currentQuater == 1) {
+
+                label.push("oct", "nov", "dec", "jan", "feb", "mar");
+                return label;
+
+            }
+        }
+       
+       
+    }
+
+    function DataBind(data) {
+        debugger;
+        var month = getListMonthNames("current");
+        var month1, month2, month3;
+        for (var i = 0; i <= 2; i++) {
+            
+                month1 = data[i][month[0]];
+                month2 = data[i][month[1]]
+                month3 = data[i][month[2]];
+                       
+            var q4 = data[i].total;
+            var name = "canvas" + (i + 1);
+            var tabHeader = "#tabheader" + (i + 1);
+            var totalAmount = "#totalamount" + (i + 1);
+            var spantotalRevenue = "#TotalRevenue" + (i + 1);
+            var spnTotalRevenue = $(spantotalRevenue);
+            spnTotalRevenue.html('<h4>Actual Revenue</h4>');
+            var ctx = document.getElementById(name).getContext("2d");
+            ctx.canvas.width = "300";
+            ctx.canvas.height = "300";
+
+            var tabHeaderr = $(tabHeader);
+            var totalRevenue = $(totalAmount);
+            totalRevenue.html('$ :' + q4);
+
+            tabHeaderr.html(data[i].DMManger);
+            var barChartData = {
+                labels: [month[0], month[1], month[2]],
+                datasets: []
+            }
+            var datasetobj = {
+                label: data[i].DMManger,
+                fillColor: ATbarchartfillcolor,
+                strokeColor: ATbarchartstrokeColor,
+                highlightFill: ATbarcharthighlightFill,
+                highlightStroke: ATbarcharthighlightStroke,
+                data: [month1, month2, month3]
+            }
+            
+            barChartData.datasets = [];
+            barChartData.datasets.push(datasetobj);
+           
+            window.myBar = new Chart(ctx).Bar(barChartData);
+
+        }
+    }
+
+    function next(data) {
+
+        var month = getListMonthNames("next");
+        var month1, month2, month3;
+        for (var i = 0; i <= 2; i++) {
+            //debugger;
+
+            month1 = data[i][month[0]];
+            month2 = data[i][month[1]]
+            month3 = data[i][month[2]];
+
+            var q4 = data[i].total;
+            var name = "canvas" + (i + 1);
+            var tabHeader = "#tabheader" + (i + 1);
+            var totalAmount = "#totalamount" + (i + 1);
+            var spantotalRevenue = "#TotalRevenue" + (i + 1);
+            var ctx = document.getElementById(name).getContext("2d");
+            ctx.canvas.width = "300";
+            ctx.canvas.height = "300";
+
+            var tabHeaderr = $(tabHeader);
+            var spnTotalRevenue = $(spantotalRevenue);
+            spnTotalRevenue.html('<h4>Projected Revenue</h4>');
+            var totalRevenue = $(totalAmount);
+            totalRevenue.html(q4);
+
+            tabHeaderr.html(data[i].DMManger);
+            var barChartData = {
+                labels: [month[0], month[1], month[2]],
+                datasets: []
+            }
+            var datasetobj = {
+                label: data[i].DMManger,
+                fillColor: ATbarchartfillcolor,
+                strokeColor: ATbarchartstrokeColor,
+                highlightFill: ATbarcharthighlightFill,
+                highlightStroke: ATbarcharthighlightStroke,
+                data: [month1, month2, month3]
+            }
+            barChartData.datasets = [];
+            barChartData.datasets.push(datasetobj);
+            window.myBar = new Chart(ctx).Bar(barChartData, {
+                responsive: false
+            });
+
+        }
+    }
+
+    function previous(data) {
+        var month = getListMonthNames("previous");
+        var month1, month2, month3;
+
+        for (var i = 0; i <= 2; i++) {
+
+            month1 = data[i][month[0]];
+            month2 = data[i][month[1]]
+            month3 = data[i][month[2]];
+
+            var q4 = data[i].total;
+            var name = "canvas" + (i + 1);
+            var tabHeader = "#tabheader" + (i + 1);
+            var totalAmount = "#totalamount" + (i + 1);
+            var spantotalRevenue = "#TotalRevenue" + (i + 1);
+            var spnTotalRevenue = $(spantotalRevenue);
+            spnTotalRevenue.html('<h4>Actual Revenue</h4>');
+
+            var ctx = document.getElementById(name).getContext("2d");
+            ctx.canvas.width = "300";
+            ctx.canvas.height = "300";
+
+            var tabHeaderr = $(tabHeader);
+            var totalRevenue = $(totalAmount);
+            totalRevenue.html(q4);
+
+            tabHeaderr.html(data[i].DMManger);
+            var barChartData = {
+                labels: [month[0], month[1], month[2]],
+                datasets: []
+            }
+            var datasetobj = {
+                label: data[i].DMManger,
+                fillColor: ATbarchartfillcolor,
+                strokeColor: ATbarchartstrokeColor,
+                highlightFill: ATbarcharthighlightFill,
+                highlightStroke: ATbarcharthighlightStroke,
+                data: [month1, month2, month2]
+            }
+            barChartData.datasets = [];
+            barChartData.datasets.push(datasetobj);
+            window.myBar = new Chart(ctx).Bar(barChartData, {
+                responsive: false
+            });
+
+        }
+    }
+
+    function lasttwoquaters(data) {
+        debugger;
+        var month = getListMonthNames("lasttwoquaters");
+        var month1, month2, month3, month4, month5, month6;
+
+        for (var i = 0; i <= 2; i++) {
+
+            var jul, aug, sep, oct, nov, dec, q4;
+
+            month1 = data[i][month[0]];
+            month2 = data[i][month[1]]
+            month3 = data[i][month[2]];
+            month4 = data[i][month[3]];
+            month5 = data[i][month[4]];
+            month6 = data[i][month[5]];
+
+            var name = "canvas" + (i + 1);
+            var tabHeader = "#tabheader" + (i + 1);
+            var spantotalRevenue = "#TotalRevenue" + (i + 1);
+            var spnTotalRevenue = $(spantotalRevenue);
+            spnTotalRevenue.html('<h4>Actual Revenue</h4>');
+
+            var ctx = document.getElementById(name).getContext("2d");
+            ctx.canvas.width = "300";
+            ctx.canvas.height = "300";
+
+            var tabHeaderr = $(tabHeader);
+
+            tabHeaderr.html(data[i].DMManger);
+            var barChartData = {
+                labels: [month[0], month[1], month[2], month[3], month[4], month[5]],
+                datasets: []
+            }
+            var datasetobj = {
+                label: data[i].DMManger,
+                fillColor: ATbarchartfillcolor,
+                strokeColor: ATbarchartstrokeColor,
+                highlightFill: ATbarcharthighlightFill,
+                highlightStroke: ATbarcharthighlightStroke,
+                data: [month1,month2,month3,month4,month5,month6]
+            }
+            barChartData.datasets = [];
+            barChartData.datasets.push(datasetobj);
+            window.myBar = new Chart(ctx).Bar(barChartData, {
+                responsive: false
+            });
+
+        }
+    }
+    
     function getCurrentQuater() {
         var d = new Date(); 
         var q = [4, 1, 2, 3];
         var cq = q[Math.floor(d.getMonth() / 3)];
         return cq;
     }
-
+  
     function getMonthAndYearBasedOnQuater(currentQuater,type)
     {
         debugger;
         var months = [];
         var years = [];
         var monthAndYear = {};
+
+        if (type == "current") {
+            if (currentQuater == 4) {
+                months.push(01, 02, 03);
+                var d = new Date();
+                years.push(d.getFullYear());
+                monthAndYear.months = months;
+                monthAndYear.years = years;
+            }
+            if (currentQuater == 3) {
+                months.push(10, 11,12);
+                var d = new Date();
+                years.push(d.getFullYear() + 1);
+                monthAndYear.months = months;
+                monthAndYear.years = years;
+            }
+            if (currentQuater == 2) {
+                months.push(07,08,09);
+                var d = new Date();
+                years.push(d.getFullYear());
+                monthAndYear.months = months;
+                monthAndYear.years = years;
+            }
+            if (currentQuater == 1) {
+                months.push[04, 05, 07];
+                var d = new Date();
+                years.push(d.getFullYear());
+                monthAndYear.months = months;
+                monthAndYear.years = years;
+            }
+        }
         if (type == "next")
         {         
             if(currentQuater==4)
@@ -589,7 +902,22 @@ app.controller('revenuecntrl', function ($scope, $http, $location, Serviceurl) {
     var monthYear = getCurrentMonthAndYear();
     var type = "revenuechart";
 
-    $http.get(Serviceurl + "/getrevenue/" + monthYear + "/" + type + "/" + uid + "/" + listofdms)
+    var currentQuater = getCurrentQuater();
+    var dates = getMonthAndYearBasedOnQuater(currentQuater, "current");
+    var month;
+
+    var url = Serviceurl + "/getrevenue/";
+    for (var i = 0; i < dates.months.length; i++) {
+        if (dates.months[i] < 10) {
+            month = "0" + dates.months[i];
+        } else
+            month = dates.months[i];
+
+        url += dates.years[0] + "-" + month + "/";
+    }
+    url += type + "/" + uid + "/" + listofdms;
+
+    $http.get(url)
         .success(function (data) {
             DataBind(data);
         })
@@ -597,8 +925,22 @@ app.controller('revenuecntrl', function ($scope, $http, $location, Serviceurl) {
 
 
     $scope.firstQ = function () {
-        debugger;
-        $http.get(Serviceurl + "/getrevenue/" + monthYear + "/" + type + "/" + uid + "/" + listofdms)
+        
+        var currentQuater = getCurrentQuater();
+        var dates = getMonthAndYearBasedOnQuater(currentQuater, "current");
+        var month;
+
+        var url = Serviceurl + "/getrevenue/";
+        for (var i = 0; i < dates.months.length; i++) {
+            if (dates.months[i] < 10) {
+                month = "0" + dates.months[i];
+            } else
+                month = dates.months[i];
+
+            url += dates.years[0] + "-" + month + "/";
+        }
+        url += type + "/" + uid + "/" + listofdms;
+        $http.get(url)
        .success(function (data) {
            DataBind(data);
        })
@@ -611,13 +953,21 @@ app.controller('revenuecntrl', function ($scope, $http, $location, Serviceurl) {
         var currentQuater = getCurrentQuater();
         var dates = getMonthAndYearBasedOnQuater(currentQuater, "next");
         var month;
-        if (dates.months[0] < 10) {
-            month = "0" + dates.months[0];
-        } else
-            month =  dates.months[0];
-        var requiredDate = dates.years[0] + "-" + month;
-        $http.get(Serviceurl + "/getrevenue/" + requiredDate + "/" + type + "/" + uid + "/" + listofdms)
-      .success(function (data) {
+       
+        //var requiredDate = dates.years[0] + "-" + month;
+        var url=Serviceurl+"/getrevenue/";
+        for (var i = 0; i < dates.months.length; i++)
+        {
+            if (dates.months[i] < 10) {
+                month = "0" + dates.months[i];
+            } else
+                month =  dates.months[i];
+            
+            url+=dates.years[0] + "-" + month + "/";
+        }
+        url+=type + "/" + uid + "/" + listofdms;
+        $http.get(url)
+       .success(function (data) {
           next(data);
       })
   .error();
@@ -629,33 +979,65 @@ app.controller('revenuecntrl', function ($scope, $http, $location, Serviceurl) {
         var currentQuater = getCurrentQuater();
         var dates = getMonthAndYearBasedOnQuater(currentQuater, "previous");
         var month;
-        if (dates.months[0] < 10) {
-            month = "0" + dates.months[0];
-        } else
-            month = dates.months[0];
-        var requiredDate = dates.years[0] + "-" + month;
-        $http.get(Serviceurl + "/getrevenue/" + reqdate3 + "/" + type + "/" + uid + "/" + listofdms)
+        var url = Serviceurl + "/getrevenue/";
+        for (var i = 0; i < dates.months.length; i++) {
+            if (dates.months[i] < 10) {
+                month = "0" + dates.months[i];
+            } else
+                month = dates.months[i];
+
+            url += dates.years[0] + "-" + month + "/";
+        }
+        url += type + "/" + uid + "/" + listofdms;
+
+        $http.get(url)
           .success(function (data) {
               previous(data);
           })
       .error();
     }
 
-
+    //last2q
     $scope.fourthQ = function () {
-        var reqdate4 = "2015-7-1";
+        debugger;
+        var currentQuater = getCurrentQuater();
+        var dates = getMonthAndYearBasedOnQuater(currentQuater, "lasttwoquaters");
+        var month;
         var jsonData = [];
-        $http.get(Serviceurl + "/getrevenue/" + reqdate4 + "/" + type + "/" + uid + "/" + listofdms)
+        var url = Serviceurl + "/getrevenue/";
+        for (var i = 0; i < dates.months.length-3; i++) {
+            if (dates.months[i] < 10) {
+                month = "0" + dates.months[i];
+            } else
+                month = dates.months[i];
+
+            url += dates.years[0] + "-" + month + "/";
+        }
+        url += type + "/" + uid + "/" + listofdms;
+
+        $http.get(url)
        .success(function (data) {
+           debugger;
            for (var i = 0; i < data.length; i++) {
                jsonData.push(data[i]);
            }
-           var reqdate5 = "2015-10-1";
-           $http.get(Serviceurl + "/getrevenue/" + reqdate5 + "/" + type + "/" + uid + "/" + listofdms).success(function (response) {
+           url = Serviceurl + "/getrevenue/";
+           for (var i = 3; i < dates.months.length; i++) {
+               if (dates.months[i] < 10) {
+                   month = "0" + dates.months[i];
+               } else
+                   month = dates.months[i];
+
+               url += dates.years[0] + "-" + month + "/";
+           }
+           url += type + "/" + uid + "/" + listofdms;
+           $http.get(url).success(function (response) {
+               debugger;
+               var month = getListMonthNames("lasttwoquaters");
                for (var i = 0; i < response.length; i++) {
-                   jsonData[i]["oct"] = response[i].oct;
-                   jsonData[i]["nov"] = response[i].nov;
-                   jsonData[i]["dec"] = response[i].dec;
+                   jsonData[i][month[3]] = response[i][month[3]];
+                   jsonData[i][month[4]] = response[i][month[4]];
+                   jsonData[i][month[5]] = response[i][month[5]];
                }
 
                lasttwoquaters(jsonData);
@@ -668,14 +1050,19 @@ app.controller('revenuecntrl', function ($scope, $http, $location, Serviceurl) {
 app.controller('listofDMCntrl', ['$scope', '$http', '$rootScope', 'Serviceurl', function ($scope, $http, $rootScope, Serviceurl) {
     //code 
     // $scope.managers = managersData;
+    debugger;
     window.localStorage.setItem("reqchmDM", "");
 
     var uid = window.localStorage.getItem("uid");
+    document.getElementById("Loading").style.display = "block";
     $http.get(Serviceurl + "/getdeliverymanagers/" + uid)
     .success(function (response) {
         $scope.managers = response[0].deliverymanagerlist;
+        document.getElementById("Loading").style.display = "none";
     })
-    .error();
+    .error(function (data, status) {
+        document.getElementById("Loading").style.display = "none";
+    });
 
     $scope.selection = [];
     $scope.toggleSelection = function (dmname) {
@@ -790,182 +1177,6 @@ function getUrlParameter(param, dummyPath) {
     return res;
 }
 
-function DataBind(data) {
-    debugger;    
-    for (var i = 0; i <= 2; i++) {
-
-        var jan = data[i].jan;
-        var feb = data[i].feb;
-        var mar = data[i].mar;
-        var q4 = data[i].total;
-        var name = "canvas" + (i + 1);
-        var tabHeader = "#tabheader" + (i + 1);
-        var totalAmount = "#totalamount" + (i + 1);
-        var spantotalRevenue = "#TotalRevenue" + (i + 1);
-        var spnTotalRevenue = $(spantotalRevenue);
-        spnTotalRevenue.html('<h4>Actual Revenue</h4>');
-        var ctx = document.getElementById(name).getContext("2d");
-        ctx.canvas.width = "300";
-        ctx.canvas.height = "300";
-
-        var tabHeaderr = $(tabHeader);
-        var totalRevenue = $(totalAmount);
-        totalRevenue.html('$ :' + q4);
-
-        tabHeaderr.html(data[i].DMManger);
-        var barChartData = {
-            labels: ["January", "February", "March"],
-            datasets: []
-        }
-        var datasetobj = {
-            label: data[i].DMManger,
-            fillColor: ATbarchartfillcolor,
-            strokeColor: ATbarchartstrokeColor,
-            highlightFill: ATbarcharthighlightFill,
-            highlightStroke: ATbarcharthighlightStroke,
-            data: [jan, feb, mar]
-        }
-        barChartData.datasets = [];
-        barChartData.datasets.push(datasetobj);
-        window.myBar = new Chart(ctx).Bar(barChartData, {
-            responsive: false
-        });
-
-    }
-}
-
-function next(data) {
-    for (var i = 0; i <= 2; i++) {
-        //debugger;
-        var apr = data[i].apr;
-        var may = data[i].may;
-        var jun = data[i].jun;
-        var q4 = data[i].total;
-        var name = "canvas" + (i + 1);
-        var tabHeader = "#tabheader" + (i + 1);
-        var totalAmount = "#totalamount" + (i + 1);
-        var spantotalRevenue = "#TotalRevenue" + (i + 1);
-        var ctx = document.getElementById(name).getContext("2d");
-        ctx.canvas.width = "300";
-        ctx.canvas.height = "300";
-
-        var tabHeaderr = $(tabHeader);
-        var spnTotalRevenue = $(spantotalRevenue);
-        spnTotalRevenue.html('<h4>Projected Revenue</h4>');
-        var totalRevenue = $(totalAmount);
-        totalRevenue.html(q4);
-
-        tabHeaderr.html(data[i].DMManger);
-        var barChartData = {
-            labels: ["April", "May", "June"],
-            datasets: []
-        }
-        var datasetobj = {
-            label: data[i].DMManger,
-            fillColor: ATbarchartfillcolor,
-            strokeColor: ATbarchartstrokeColor,
-            highlightFill: ATbarcharthighlightFill,
-            highlightStroke: ATbarcharthighlightStroke,
-            data: [apr, may, jun]
-        }
-        barChartData.datasets = [];
-        barChartData.datasets.push(datasetobj);
-        window.myBar = new Chart(ctx).Bar(barChartData, {
-            responsive: false
-        });
-
-    }
-}
-
-function previous(data) {
-    for (var i = 0; i <= 2; i++) {
-
-        var oct = data[i].oct;
-        var nov = data[i].nov;
-        var dec = data[i].dec;
-        var q4 = data[i].total;
-        var name = "canvas" + (i + 1);
-        var tabHeader = "#tabheader" + (i + 1);
-        var totalAmount = "#totalamount" + (i + 1);
-        var spantotalRevenue = "#TotalRevenue" + (i + 1);
-        var spnTotalRevenue = $(spantotalRevenue);
-        spnTotalRevenue.html('<h4>Actual Revenue</h4>');
-
-        var ctx = document.getElementById(name).getContext("2d");
-        ctx.canvas.width = "300";
-        ctx.canvas.height = "300";
-
-        var tabHeaderr = $(tabHeader);
-        var totalRevenue = $(totalAmount);
-        totalRevenue.html(q4);
-
-        tabHeaderr.html(data[i].DMManger);
-        var barChartData = {
-            labels: ["October", "November", "December"],
-            datasets: []
-        }
-        var datasetobj = {
-            label: data[i].DMManger,
-            fillColor: ATbarchartfillcolor,
-            strokeColor: ATbarchartstrokeColor,
-            highlightFill: ATbarcharthighlightFill,
-            highlightStroke: ATbarcharthighlightStroke,
-            data: [oct, nov, dec]
-        }
-        barChartData.datasets = [];
-        barChartData.datasets.push(datasetobj);
-        window.myBar = new Chart(ctx).Bar(barChartData, {
-            responsive: false
-        });
-
-    }
-}
-
-function lasttwoquaters(data) {
-    for (var i = 0; i <= 2; i++) {
-
-        var jul, aug, sep, oct, nov, dec, q4;
-
-        jul = data[i].jul;
-        aug = data[i].aug;
-        sep = data[i].sep;
-        oct = data[i].oct;
-        nov = data[i].nov;
-        dec = data[i].dec;
-
-        var name = "canvas" + (i + 1);
-        var tabHeader = "#tabheader" + (i + 1);
-        var spantotalRevenue = "#TotalRevenue" + (i + 1);
-        var spnTotalRevenue = $(spantotalRevenue);
-        spnTotalRevenue.html('<h4>Actual Revenue</h4>');
-
-        var ctx = document.getElementById(name).getContext("2d");
-        ctx.canvas.width = "300";
-        ctx.canvas.height = "300";
-
-        var tabHeaderr = $(tabHeader);
-
-        tabHeaderr.html(data[i].DMManger);
-        var barChartData = {
-            labels: ["Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-            datasets: []
-        }
-        var datasetobj = {
-            label: data[i].DMManger,
-            fillColor: ATbarchartfillcolor,
-            strokeColor: ATbarchartstrokeColor,
-            highlightFill: ATbarcharthighlightFill,
-            highlightStroke: ATbarcharthighlightStroke,
-            data: [jul, aug, sep, oct, nov, dec]
-        }
-        barChartData.datasets = [];
-        barChartData.datasets.push(datasetobj);
-        window.myBar = new Chart(ctx).Bar(barChartData, {
-            responsive: false
-        });
-
-    }
-}
 
 app.controller('chmchartcntrl', function ($scope, $http, Serviceurl) {
     var uid = window.localStorage.getItem("uid");
@@ -979,7 +1190,7 @@ app.controller('chmchartcntrl', function ($scope, $http, Serviceurl) {
 
     $http.get(Serviceurl + "/getchmparametersfordmdata/chm/" + uid + "/" + reqchmDM)
     .success(function (response) {
-
+        debugger;
         var d = new Date(); // If no date supplied, use today
         var q = [4, 1, 2, 3];
         var cq = q[Math.floor(d.getMonth() / 3)];
@@ -1095,6 +1306,7 @@ app.controller('chmchartcntrl', function ($scope, $http, Serviceurl) {
 });
 
 function loadchmChartData(responsedata, filterparameter) {
+    debugger;
     var ctx = document.getElementById("canvas1").getContext("2d");
     ctx.canvas.width = "300";
     ctx.canvas.height = "280";
@@ -1154,9 +1366,9 @@ function loadchmChartData(responsedata, filterparameter) {
         ATLinechartpointHighlightStroke = "rgba(151, 203, 226,1)";
 
     var Q1Labels = ["January", "February", "March"],
-       Q2Labels = ["April", "May", "June"],
-       Q3Labels = ["July", "August", "September"],
-       Q4Labels = ["October", "November", "December"];
+        Q2Labels = ["April", "May", "June"],
+        Q3Labels = ["July", "August", "September"],
+        Q4Labels = ["October", "November", "December"];
     var Q1TTdata = [65, 59, 60],
         Q1ATdata = [70, 60, 40],
         Q2TTdata = [80, 90, 85],

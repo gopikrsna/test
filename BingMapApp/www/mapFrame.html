@@ -57,10 +57,9 @@
                             <div style="padding-left:50px">
                                 <img id="menu-logo" src="images/XView.png" height="36" width="36" />
                                 <a id="menu-title">Executive Dashboard</a>
-                                <div style="float:right">
-                                    <div id="Loading" style="display:none;"><img src="./images/spinner.gif" /></div>
-                                </div>
-
+                                <!--<div style="float:right">
+                                    <div id="Loading" style="display:block"><img src="./images/image_961391.gif" /></div>
+                                </div>-->
                             </div>
                             
                         </div>
@@ -152,10 +151,12 @@
 
 
         CORSMsg.ReceiveMsg(function (jData) {
+           
             //parent.document.location.href = "ms-appx-web://" + document.location.host + "/www/" + jData.data;;
             //window.top.location.href = "ms-appx:///www/" + jData.data;
             //window.location.href = "ms-appx:///www/views/test.html" ;
             window.location.href = jData.data;
+         
             //window.top.location.href = "http://google.co.in";// jData.data;
         }, true);
 
